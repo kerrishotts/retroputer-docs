@@ -680,7 +680,7 @@ LD AL, 65
 When loading data into the low portion of the register, the data in the high portion is not modified.
 {% endhint %}
 
-The other forms load data from memory into the destination register. There are several [addressing modes](../../technical/technical-overview/6516-central-processing-unit/addressing-modes.md) available.
+The other forms load data from memory into the destination register. There are several [addressing modes](../technical/technical-overview/6516-central-processing-unit/addressing-modes.md) available.
 
 ## LOOP
 

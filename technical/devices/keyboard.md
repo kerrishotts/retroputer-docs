@@ -1,7 +1,3 @@
----
-description: The Keyboard (device 3) and how to use it.
----
-
 # Keyboard
 
 The keyboard device listens for user keypresses and then sends them to the processor for further handling.
