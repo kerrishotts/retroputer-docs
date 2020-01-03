@@ -1,4 +1,4 @@
-# Subroutine Calling Convention
+# Calling Convention
 
 ## Volatile and Preserved Registers
 
@@ -100,11 +100,9 @@ Because the 6516 has several registers, the calling convention does use some of 
 | 2 | C |
 | 3+ | BP+-2 \(...\) |
 
-{% hint style="info" %}
-#### Important
-
-Aggregates \(8-bit values\) are passed in using _both_ the low and high portions of the corresponding 16-bit register. As such, the parameter ordering changes to the following: DL, DH, CL, CH, _stack_.
-{% endhint %}
+> #### IMPORTANT
+>
+> Aggregates \(8-bit values\) are passed in using _both_ the low and high portions of the corresponding 16-bit register. As such, the parameter ordering changes to the following: DL, DH, CL, CH, _stack_.
 
 ## Pointer Parameters
 
