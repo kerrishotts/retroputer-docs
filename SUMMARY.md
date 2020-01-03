@@ -31,14 +31,14 @@
 
 ## Programming Retroputer
 
-* [Assembly Language](programming-retroputer/untitled-1/README.md)
-  * [Numbers](programming-retroputer/untitled-1/numbers.md)
-  * [Identifiers](programming-retroputer/untitled-1/identifiers.md)
-  * [Directives](programming-retroputer/untitled-1/directives.md)
-  * [Calling Convention](programming-retroputer/untitled-1/subroutine-calling-convention.md)
-  * [Accessing Memory](programming-retroputer/untitled-1/accessing-memory.md)
-  * [Instructions](programming-retroputer/untitled-1/instructions.md)
-  * [Error Messages](programming-retroputer/untitled-1/assembler-error-messages.md)
-* [The Kernel](programming-retroputer/what-is-the-kernel/README.md)
-  * [Screen Routines](programming-retroputer/what-is-the-kernel/screen-routines.md)
+* [Assembly Language](programming-retroputer/asm/README.md)
+  * [Numbers](programming-retroputer/asm/numbers.md)
+  * [Identifiers](programming-retroputer/asm/identifiers.md)
+  * [Directives](programming-retroputer/asm/directives.md)
+  * [Calling Convention](programming-retroputer/asm/subroutine-calling-convention.md)
+  * [Accessing Memory](programming-retroputer/asm/accessing-memory.md)
+  * [Instructions](programming-retroputer/asm/instructions.md)
+  * [Error Messages](programming-retroputer/asm/assembler-error-messages.md)
+* [The Kernel](programming-retroputer/kernel/README.md)
+  * [Screen Routines](programming-retroputer/kernel/screen-routines.md)
 
