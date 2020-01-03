@@ -29,19 +29,16 @@
   * [Mouse](technical/devices-1/mouse.md)
   * [Controllers](technical/devices-1/controllers.md)
 
-## Assembly Language
+## Programming Retroputer
 
-* [About the Assembler](assembly-language/untitled.md)
-* [Numbers](assembly-language/numbers.md)
-* [Identifiers](assembly-language/identifiers.md)
-* [Directives](assembly-language/directives.md)
-* [Subroutine Calling Convention](assembly-language/subroutine-calling-convention.md)
-* [Assembler Error Messages](assembly-language/assembler-error-messages.md)
-* [Accessing Memory](assembly-language/accessing-memory.md)
-* [Instructions](assembly-language/instructions.md)
-
-## Kernel
-
-* [What is the Kernel?](kernel/what-is-the-kernel.md)
-* [Screen Routines](kernel/screen-routines.md)
+* [Assembly Language](programming-retroputer/untitled-1/README.md)
+  * [Numbers](programming-retroputer/untitled-1/numbers.md)
+  * [Identifiers](programming-retroputer/untitled-1/identifiers.md)
+  * [Directives](programming-retroputer/untitled-1/directives.md)
+  * [Calling Convention](programming-retroputer/untitled-1/subroutine-calling-convention.md)
+  * [Accessing Memory](programming-retroputer/untitled-1/accessing-memory.md)
+  * [Instructions](programming-retroputer/untitled-1/instructions.md)
+  * [Error Messages](programming-retroputer/untitled-1/assembler-error-messages.md)
+* [The Kernel](programming-retroputer/what-is-the-kernel/README.md)
+  * [Screen Routines](programming-retroputer/what-is-the-kernel/screen-routines.md)
 

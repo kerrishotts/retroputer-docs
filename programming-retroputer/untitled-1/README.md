@@ -1,4 +1,4 @@
-# About the Assembler
+# Assembly Language
 
 The Retroputer Assembler is called `BASM` and, while not a macro assembler, can parse some constructs that feel like a high-level language. BASM generates output that Retroputer can then load into its memory and feed to the 6516 CPU to execute the desired program.
 

@@ -1,4 +1,4 @@
-# What is the Kernel?
+# The Kernel
 
 The **kernel** is the core operating system for Retroputer. It controls the startup and initialization of memory, trap vectors, and launches whatever code is stored at 0x02000. It also contains a lot of reusable routines that make working with the screen, the keyboard, and other devices easier.
 
