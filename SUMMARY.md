@@ -21,13 +21,13 @@
     * [Layers](technical/technical-overview/6448-video-generator-1/layers.md)
     * [Hardware Sprites](technical/technical-overview/6448-video-generator-1/hardware-sprites.md)
   * [9800 Persistent Storage Interface](technical/technical-overview/9800-persistent-storage-interface.md)
-* [Devices](technical/devices-1/README.md)
-  * [I/O Bus](technical/devices-1/i-o-bus.md)
-  * [Console](technical/devices-1/console.md)
-  * [Keyboard](technical/devices-1/keyboard.md)
-  * [Hardware Timers](technical/devices-1/hardware-timers.md)
-  * [Mouse](technical/devices-1/mouse.md)
-  * [Controllers](technical/devices-1/controllers.md)
+* [Devices](technical/devices/README.md)
+  * [I/O Bus](technical/devices/i-o-bus.md)
+  * [Console](technical/devices/console.md)
+  * [Keyboard](technical/devices/keyboard.md)
+  * [Hardware Timers](technical/devices/hardware-timers.md)
+  * [Mouse](technical/devices/mouse.md)
+  * [Controllers](technical/devices/controllers.md)
 
 ## Programming Retroputer
 
