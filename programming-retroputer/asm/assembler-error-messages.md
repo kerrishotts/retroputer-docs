@@ -1,4 +1,4 @@
-# Assembler Error Messages
+# Error Messages
 
 ### Scope {name} already declared with type {type}, but tried to change it to {type}
 
