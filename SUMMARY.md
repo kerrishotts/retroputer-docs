@@ -33,6 +33,7 @@
 
 * [BASIC](programming-retroputer/basic/README.md)
   * [Statement Reference](programming-retroputer/basic/statement-reference/README.md)
+    * [DEF](programming-retroputer/basic/statement-reference/def.md)
     * [PRINT](programming-retroputer/basic/statement-reference/print.md)
   * [Built-in Function Reference](programming-retroputer/basic/built-in-function-reference.md)
 * [The Monitor](programming-retroputer/the-monitor.md)
