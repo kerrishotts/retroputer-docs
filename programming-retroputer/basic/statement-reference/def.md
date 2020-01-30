@@ -2,45 +2,40 @@
 
 `DEF` defines a function or a subroutine.
 
-## Forms
+### Forms
 
-{% tabs %}
-{% tab title="Single line Function" %}
-```
-DEFFN fnName([arg [, args...]]) = expression
-```
-{% endtab %}
+#### Single line form
 
-{% tab title="Multiline Function" %}
 ```text
-DEFFN fnName([arg [, args...])
+DEF FN fnName([arg [, args...]]) = expression
+DEF SUB subName([arg, [, args...]]) = statement
+```
+
+#### Multiline form
+
+```text
+DEF FN fnName([arg [, args...])
   REM statements
   RETURN result
-ENDFN
-```
-{% endtab %}
+END FN
 
-{% tab title="Subroutine" %}
-```
-DEFSUB subName([arg [, args...]])
+DEF SUB subName([arg [, args...]])
   REM Statements
-ENDSUB
+END SUB
 ```
-{% endtab %}
-{% endtabs %}
 
 ## Examples
 
-{% tabs %}
-{% tab title="Single line Function" %}
-```text
-DEFFN double(x) = x * 2
-DEFFN textAddr(row, col) = row * 32 + col
-```
-{% endtab %}
+#### Single line functions
 
-{% tab title="Multiline Function" %}
+```text
+DEF FN double(x) = RETURN x * 2
+DEF FN textAddr(row, col) = RETURN row * 32 + col
 ```
+
+#### Multiline function
+
+```text
 DEF FN upper$(str$)
   DIM t$, ch$, ch
   FOR i = 0 TO LEN(str$)
@@ -48,20 +43,18 @@ DEF FN upper$(str$)
     ch = ASC(ch$)
     IF ch >= ASC("a") AND ch <= ASC("z") THEN
       ch = ch - 32
-    ENDIF
+    END IF
     t$ = t$ + CHR$(ch)
   NEXT i
   RETURN t$
-ENDFN
+END FN
 ```
-{% endtab %}
 
-{% tab title="Subroutine" %}
-```
-DEFSUB printIntro()
+#### Subroutine
+
+```text
+DEF SUB printIntro()
   PRINT "Hello, world!"
-ENDSUB
+END SUB
 ```
-{% endtab %}
-{% endtabs %}
 
