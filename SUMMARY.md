@@ -6,6 +6,7 @@
 ## Technical Details <a id="technical"></a>
 
 * [Technical Overview](technical/technical-overview/README.md)
+  * [Block Diagram](technical/technical-overview/block-diagram.md)
   * [Memory Layout](technical/technical-overview/memory-layout.md)
   * [1125 Sound Generator](technical/technical-overview/1125-sound-generator.md)
   * [6516 Processor](technical/technical-overview/6516-central-processing-unit/README.md)
