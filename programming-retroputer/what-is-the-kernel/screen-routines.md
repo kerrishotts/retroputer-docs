@@ -273,6 +273,8 @@ call [CLEAR_SCREEN]
 
 Removes the character directly preceding the cursor in the current logical line and shifts the remaining characters left by one. The cursor is moved one space to the left, and if necessary is placed at the end of the previous row. The cursor cannot retreat past the top-left screen position.
 
+* TODO: Expose
+
 ```text
 call [CURSOR_BACKSPACE]
 ```

@@ -47,5 +47,6 @@
   * [Instructions](programming-retroputer/asm/instructions.md)
   * [Error Messages](programming-retroputer/asm/assembler-error-messages.md)
 * [The Kernel](programming-retroputer/what-is-the-kernel/README.md)
+  * [Standard Library](programming-retroputer/what-is-the-kernel/standard-library.md)
   * [Screen and Editor](programming-retroputer/what-is-the-kernel/screen-routines.md)
 
