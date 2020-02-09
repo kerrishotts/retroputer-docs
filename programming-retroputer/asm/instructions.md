@@ -430,29 +430,31 @@ DEC dest
 
 Divides the destination by the source, and stores the result in the destination.
 
-$$
-r = \frac {source}{{dest}_{in}} \\
-dest_{out} = r_{[\text{msb}:0]}
-$$
+```text
+r = source / dest_in
+dest_out = r[msb:0]
+```
 
 Once the result of the operation is computed, the ALU computes the flags as follows:
 
-$$
-Z_{out} = \begin{cases}
-1 & r = 0 \\
-0 & r \ne 0
-\end{cases} 
-,
-C_{out} = 0,
-N_{out} = r_{[\text{msb}]}
-, 
-V_{out} =0
-\\
-{EX}_{out} = \begin{cases}
-1 & source = 0 \\
-{EX}_{in} & source \ne 0
-\end{cases}
-$$
+```text
+z_out = {
+    1 when r = 0
+    0 when r != 0
+}
+
+c_out = 0
+
+n_out = r[msb]
+
+v_out = 0
+
+EX_out = {
+    1 when dest_in = 0
+    EX_in when dest_in != 0
+}
+
+```
 
 > **Note**
 >
@@ -716,29 +718,30 @@ todo
 
 Divides the destination by the source, and stores the remainder in the destination.
 
-$$
-r = {source} \ modulo \ {{dest}_{in}} \\
-dest_{out} = r_{[\text{msb}:0]}
-$$
+```text
+r = source mod dest_in
+dest_out = r[msb:0]
+```
 
 Once the result of the operation is computed, the ALU computes the flags as follows:
 
-$$
-Z_{out} = \begin{cases}
-1 & r = 0 \\
-0 & r \ne 0
-\end{cases} 
-,
-C_{out} = 0,
-N_{out} = r_{[\text{msb}]}
-, 
-V_{out} =0
-\\
-{EX}_{out} = \begin{cases}
-1 & source = 0 \\
-{EX}_{in} & source \ne 0
-\end{cases}
-$$
+```text
+z_out = {
+    1 when r = 0
+    0 when r != 0
+}
+
+c_out = 0
+
+n_out = r[msb]
+
+v_out = 0
+
+EX_out = {
+    1 when dest_in = 0
+    EX_in when dest_in != 0
+}
+```
 
 > **Note**
 >
@@ -800,24 +803,25 @@ ld a, 20
 
 Multiples the destination by the source, and stores the result in the destination.
 
-$$
-r = {source} \times {{dest}_{in}} \\
-dest_{out} = r_{[\text{msb}:0]}
-$$
+```text
+r = source * dest_in
+dest_out = r[msb:0]
+```
 
 Once the result of the operation is computed, the ALU computes the flags as follows:
 
-$$
-Z_{out} = \begin{cases}
-1 & r = 0 \\
-0 & r \ne 0
-\end{cases} 
-,
-C_{out} = r > \texttt{max-unsigned-word},
-N_{out} = r_{[\text{msb}]}
-, 
-V_{out} =0
-$$
+```text
+z_out = {
+    1 when r = 0
+    0 when r != 0
+}
+
+c_out = r > max-unsigned-word
+
+n_out = r[msb]
+
+v_out = 0
+```
 
 > **Note**
 >
@@ -888,27 +892,22 @@ Do nothing. Takes some time, so can be used to slow a process down slightly.
 
 Flips the bits in the register. If the register was originally `0b10010010`, it will now be `0b01101101`.
 
-$$
-dest_{out} = \lnot dest_{in}
-$$
+```text
+dest-out = !dest_in
+```
 
 Flags are computed as follows:
 
-$$
-Z_{out} = \begin{cases}
-1 & r = 0 \\
-0 & r \ne 0
-\end{cases} 
-,
-C_{out} = \begin{cases} 
-      0 & r \texttt{>>} width = 0 \\
-      1 & r \texttt{>>} width \ge 0
-   \end{cases}
-,
-N_{out} = r_{[\text{msb}]}
-, 
-V_{out} = 0
-$$
+```text
+z_out = {
+    1 when r = 0
+    0 when r != 0
+}
+
+c_out = 0
+n_out = r[msb]
+v_out = 0
+```
 
 #### Flags
 
@@ -935,27 +934,27 @@ NOT dest
 
 Performs a bitwise OR on the source and destination operands, and stores the result in the destination.
 
-$$
-dest_{out} = dest_{in} \lor source_{in}
-$$
+```text
+dest_out = dest_in OR source_in
+```
 
 Once the result of the operation is computed, the ALU computes the flags as follows:
 
-$$
-Z_{out} = \begin{cases}
-1 & r = 0 \\
-0 & r \ne 0
-\end{cases} 
-,
-C_{out} = \begin{cases} 
-      0 & r \texttt{>>} width = 0 \\
-      1 & r \texttt{>>} width \ge 0
-   \end{cases}
-,
-N_{out} = r_{[\text{msb}]}
-, 
-V_{out} = 0
-$$
+```text
+z_out = {
+    1 when r = 0
+    0 when r != 0
+}
+
+c_out = {
+    0 when r >> width = 0
+    1 when r >> width >= 0
+}
+
+n_out = r[msb]
+
+v_out = 0
+```
 
 #### Forms
 
