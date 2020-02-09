@@ -3,7 +3,7 @@
 * [Welcome to Retroputer](README.md)
 * [Using the Web Version](using-the-web-version.md)
 
-## Technical Details <a id="technical"></a>
+## Technical Details
 
 * [Technical Overview](technical/technical-overview/README.md)
   * [Block Diagram](technical/technical-overview/block-diagram.md)

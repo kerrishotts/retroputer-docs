@@ -2,7 +2,7 @@
 
 The Web Version of Retroputer makes it easy to get a feel for how Retroputer works. It's a completely integrated development environment, including the ability to see the current state of the machine, the contents of memory, the I/O bus, and an assembler. 
 
-![The web version of Retroputer](.gitbook/assets/image%20%288%29.png)
+![The web version of Retroputer](./images/web-interface.png)
 
 > **Note**
 >
@@ -73,7 +73,7 @@ The **State** panel lets you take a look into the processor state. You can reque
 
 ## Starting Retroputer
 
-![Retroputer&apos;s Launch Screen with BASIC running](.gitbook/assets/image%20%285%29.png)
+![Retroputer&apos;s Launch Screen with BASIC running](./images/basic-greeting.png)
 
 
 
